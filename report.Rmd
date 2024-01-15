@@ -1,0 +1,46 @@
+---
+title: "R-project_Report"
+output: word_document
+always_allow_html: TRUE
+params:
+  month_sel: NA
+  week_sel: NA
+  day_sel: NA
+  sites_sel: NA
+  var_sel: NA
+  data_sel: NA
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(warning = FALSE,message = FALSE)
+knitr::opts_chunk$set(fig.width = 12)
+knitr::opts_chunk$set(fig.height = 6)
+source("project_functions.R")
+load("project_RData_files/sites.RData")
+```
+
+### Figure 1. Map of selected sites
+
+```{r echo = FALSE}
+map_image_func(params$sites_sel)
+knitr::include_graphics("map.png")
+```
+
+### Figure 2. Plot of selected weather variable for selected sites
+
+```{r echo = FALSE}
+plt_function(selected_sites = params$sites_sel,
+                   selected_var = params$var_sel,
+                   data_type = params$data_sel,
+                   Mth = params$month_sel,
+                   Wk = params$week_sel,
+                   Day = params$day_sel
+      )
+```
+
+### Table 1. Daily averages for selected sites
+
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+kable(table_function(params$sites_sel))
+```
