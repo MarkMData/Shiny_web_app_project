@@ -1,6 +1,6 @@
 
 # Building a Shiny Web App in R  
-**Note: To run the app on a local machine all the files must be copied into working directory**  
+*Note: To run the app on a local machine all the files must be copied into working directory*  
 
 ### Overiew
 
