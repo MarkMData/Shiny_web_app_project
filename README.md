@@ -19,11 +19,11 @@ The app was required to have the following functionality:
 - Produce a downloadable csv file of the table
 - Calculate and display the Hutton Criteria for a user selected location and month
 ### Approach  
-With quite a lot of infomation needing to be displayed I decided to go with a two page layout using the flatly theme. The first page was used for displaying the meteorological data and has a sidebar containing the user selectable options on the left, and a tabset panel on the right with a tab each for the location map, plot, table, and downloads.  
+With quite a lot of infomation needing to be displayed I decided to go with a two page layout using the flatly theme. The first page is used for displaying the meteorological data and has a sidebar containing the user selectable options on the left, and a tabset panel on the right with a tab each for the location map, plot, table, and downloads.  
 
 ![Image of Shiny web app page 1](https://github.com/MarkMData/images/blob/main/Shiny_app_pg1.PNG?raw=true)  
 
-The the second page was used for displaying the Hutton Criteria, and had a fixed panel with infomation about the Hutton criteria on the right and on the left another fixed panel with the user selctable inputs of loaction and month as well as a calender which displays the days when the Hutton criteria has been met. In the background I used a map to display the selected location.  
+The the second page is used for displaying the Hutton Criteria, and has a fixed panel with infomation about the Hutton criteria on the right and on the left another fixed panel with the user selctable inputs of loaction and month as well as a calender which displays the days when the Hutton criteria has been met. In the background I used a map to display the selected location.  
 
 ![Image of Shiny web app page 2](https://github.com/MarkMData/images/blob/main/Shiny_app_pg2.PNG?raw=true)  
 To create the app I used a single app.R file for the UI and server code, and a seperate R file for all the functions used for generating the plots, maps, and table. I also created a Rmarkdown file for the downloadable report.  
