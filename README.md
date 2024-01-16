@@ -16,5 +16,5 @@ The app was required to have the following functionality:
 - Produce a downloadable csv file of the table
 - Display calculate and display the Hutton Criteria for a user selected location and month  
   
-![Image of Shiny web app page 1](Shiny_app_pg1.PNG)  
-![Image of Shiny web app page 2](https://github.com/MarkMData/portfolio/blob/main/images/Shiny_app_pg2.PNG)  
+![Image of Shiny web app page 1](https://github.com/MarkMData/images/blob/main/Shiny_app_pg1.PNG?raw=true)  
+![Image of Shiny web app page 2](https://github.com/MarkMData/images/blob/main/Shiny_app_pg2.PNG?raw=true)  
