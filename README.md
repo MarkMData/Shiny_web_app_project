@@ -29,4 +29,4 @@ To create the app I used a single app.R file for the UI and server code, and a s
 
 The data sets for each location were provided to us as csv files and loading these into the app was slow so I converted them all to RData files. I created functions for generating the plots and table which would load the Rdata files for the selected sites and then wrangle the data (dealing with missing values, duplicates, correcting formatting, and performing aggregations if required) and then generate the desired output.
 I used the Leaflet package to create the base maps with markers for the selected locations. To show the days the Hutton criteria was met I used the calendR package which gave me a simple clean monthly calender display.  
-**Note: To run the app on a local machine all the files must be copied into working directory
+**Note: To run the app on a local machine all the files must be copied into working directory**
