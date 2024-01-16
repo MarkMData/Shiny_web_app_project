@@ -1,6 +1,6 @@
 
 # Building a Shiny Web App in R  
-*Note: To run the app on a local machine all the files must be copied into working directory*  
+*Note: To run the app on a local machine the app.R, project_functions.R, and report.RMD files as well as the folder containing the RData files must be copied into working directory*  
 
 ### Overview
 
