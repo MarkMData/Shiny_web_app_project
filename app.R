@@ -1,6 +1,5 @@
 library(tidyverse)
 library(magrittr)
-library(lubridate)
 library(calendR)
 library(shiny)
 library(leaflet)

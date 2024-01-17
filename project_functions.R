@@ -1,6 +1,5 @@
 library(tidyverse)
 library(magrittr)
-library(lubridate)
 library(calendR)
 library(ggthemes)
 library(mapview)
@@ -146,19 +145,24 @@ plt_function <- function(selected_sites,
       theme(aspect.ratio = 1/2)
   }
   if (data_type != "Raw hourly data"){
-    plt <- ggplot(
-      data = plt_data, 
-      if (nrow(combined_dfs) == 11) {
+    if (nrow(combined_dfs) == 11) {
+      plt <- ggplot(
+        data = plt_data,
         aes(x = factor(month.name[date_time], levels = month.name),
-            y = !! y_var)
-      } else { 
-        aes(x = date_time, y = !! y_var)
-      }
-    ) +
-      geom_point(aes(colour = `Selected sites`)) +
-      xlab(NULL) +
-      labs(title = paste0(selected_var," (",data_type,")")) +
-      theme(aspect.ratio = 1/2)
+            y = !! y_var)) +
+        geom_point(aes(colour = `Selected sites`),size = 2) +
+        xlab(NULL) +
+        labs(title = paste0(selected_var," (",data_type,")")) +
+        theme(aspect.ratio = 1/2)
+    } else {
+      plt <- ggplot(
+        data = plt_data,
+        aes(x = date_time, y = !! y_var)) +
+        geom_line(aes(colour = `Selected sites`)) +
+        xlab(NULL) +
+        labs(title = paste0(selected_var," (",data_type,")")) +
+        theme(aspect.ratio = 1/2)
+    }
   }  
   plt
 }
