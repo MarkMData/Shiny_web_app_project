@@ -18,6 +18,7 @@ The app was required to have the following functionality:
 - Produce a downloadable report of plots, table, and map for selected sites and weather variable
 - Produce a downloadable csv file of the table
 - Calculate and display the Hutton Criteria (a diagnostic which is used to alert farmers of the risk of potato blight forming on potato crops) for a selected location and month
+
 ## Approach  
 With a lot of infomation to display I decided to go with a two page layout using the flatly theme. The first page is used for displaying the meteorological data.  
 
